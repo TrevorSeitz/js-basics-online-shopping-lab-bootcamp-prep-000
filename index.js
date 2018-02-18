@@ -65,17 +65,17 @@ function addToCart(item) {
    return sum;
  }
 
- function removeFromCart() {
+ function removeFromCart(item) {
 
    for (var i = 0; i < cart.length; i++) {
      if (cart[i].hasOwnProperty(item)) {
        cart.splice(i, 1);
-       console.log(cart);
-       return cart;
+      //  console.log(cart);
      } else {
        return 'That item is not in your cart.';
      }
    }
+   return cart;
  }
 
 function placeOrder(cardNumber) {
