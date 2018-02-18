@@ -73,7 +73,7 @@ function removeFromCart(item) {
       console.log(cart);
       return cart;
     } else {
-      return 'Taht item is not in your cart.';
+      return 'That item is not in your cart.';
     }
   }
 }
