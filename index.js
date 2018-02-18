@@ -66,16 +66,14 @@ function addToCart(item) {
  }
 
  function removeFromCart(item) {
-
-   for (var i = 0; i < cart.length; i++) {
-     if (cart[i].hasOwnProperty(item)) {
-       cart.splice(i, 1);
-      //  console.log(cart);
-     } else {
-       return 'That item is not in your cart.';
-     }
+     for (var i = 0; i < cart.length; i++) {
+       if (cart[i].hasOwnProperty(item)) {
+         cart.splice(i, 1);
+         console.log(cart);
+         return cart;
+       } 
    }
-   return cart;
+     return 'That item is not in your cart.';
  }
 
 function placeOrder(cardNumber) {
