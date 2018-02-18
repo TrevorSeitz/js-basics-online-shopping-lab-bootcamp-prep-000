@@ -66,18 +66,18 @@ function addToCart(item) {
  }
 
  function removeFromCart(item) {
-    var inCart = false;
+    // var inCart = false;
     for (var i = 0; i < cart.length; i++) {
       if (cart[i].hasOwnProperty(item)) {
-       inCart = true;
+      //  inCart = true;
        cart.splice(i, 1);
        console.log(cart);
        return cart;
        }
     }
-    if (!inCart) {
+    // if (!inCart) {
      console.log('That item is not in your cart.');
-    }
+    // }
   }
 
 function placeOrder(cardNumber) {
