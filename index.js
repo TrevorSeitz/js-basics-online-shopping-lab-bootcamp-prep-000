@@ -65,7 +65,7 @@ function addToCart(item) {
    return sum;
  }
 
- function removeFromCart(item) {
+ function removeFromCart() {
 
    for (var i = 0; i < cart.length; i++) {
      if (cart[i].hasOwnProperty(item)) {
